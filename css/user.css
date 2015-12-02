@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.div1{
+	
+	
+	height:500px;
+	margin-top:70px;
+	border:0px solid yellow;
+	background-color:#f3aa58;
+}
+.divm{
+	width:600px;
+	/*margin-left:350px;*/
+	height:500px;
+	background-color:#c0c0c0;
+	margin:auto;
+	
+}

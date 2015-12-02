@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.div1{
+	
+	
+	height:500px;
+	margin-top:70px;
+	border:0px solid yellow;
+	background-color:#f3aa58;
+}
+.divm{
+	width:600px;
+	margin-left:350;
+	height:500px;
+	background-color:#c0c0c0;
+	margin:auto;
+	
+}
+.span1{
+	font-weight:bold;
+	font-size:30px;
+	padding-left:170px;
+	
+	
+}
+.table1{
+	margin:auto;
+	
+	margin-top:100px;
+}
