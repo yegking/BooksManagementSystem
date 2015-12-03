@@ -20,7 +20,7 @@ require_once 'common.php';
 <table class="table1">
 <tr ><td>账号:</td><td><input type="text" name="id" value="<?php echo getCookieVal("id");?>"/></td></tr>
 <tr><td>密码:</td><td><input type="password" name="password"/></td></tr>
-<tr><td>验证码:</td><td><input type="text" name="checkcode"/><img src="checkcode.php"></td></tr>
+<tr><td>验证码:</td><td><input type="text" name="checkcode"/><img src="checkcode.php" onclick="this.src='checkCode.php?aa='+Math.random()"></td></tr>
 <tr><td colspan="2">是否保存账号：<input type="checkbox" name="keep" value="yes"/></td></tr>
 <!-- 果你选择了这个checkbox后，需要将value这个值传到数据库做出相应的处理 -->
 

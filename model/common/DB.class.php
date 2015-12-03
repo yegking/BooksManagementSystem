@@ -102,6 +102,7 @@ public function execute_dql_fenye($sql1,$sql2,$fenyePage){
    sqlsrv_free_stmt($res);
    //分页导航
    $navigate="";
+  
    if($fenyePage->pageNow>1)
    {
        $prePage=$fenyePage->pageNow-1;

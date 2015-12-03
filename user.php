@@ -32,9 +32,9 @@
    $selServer->getFenyePage($fenyePage);
    
    
+  //$name= $_GET['name'];
    
-   
-   echo "　　　　　　欢迎".$_GET['name']."登陆成功";
+   //echo "　　　　　　欢迎".$name."登陆成功";
    echo "<br/>　　<a href='index.php'>返回重新登录</a>";
     
    getListTime();

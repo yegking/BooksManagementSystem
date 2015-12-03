@@ -24,9 +24,7 @@ if(empty($_POST['keep'])){
         setcookie("id",$id,time()-100);
     }
 }else{
-    
     setcookie("id",$id,time()+24*3600);
-    
 }
 
 

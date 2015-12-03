@@ -17,8 +17,10 @@
            session_start();
        }
        $Cname=$_SESSION['loginuser'];
-        
-      
+      var_dump($Cname);
+     $Cname=trim($Cname);
+     var_dump($Cname);
+      // echo "<script language=javascript>alert(var_dump($Cname));history.back();</script>";
        if($Ball>0){
            $Ball=$Ball-1;
            $Bout=$Bout+1;

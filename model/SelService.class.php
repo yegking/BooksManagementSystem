@@ -29,8 +29,8 @@
         {
             //$sql="select * from emp limit ".($pageNow-1)*$pageSize.",$pageSize";
             
-           // $sql="select top ".($pageNow-1)*$pageSize." id from books where id not in (select top $pageSize id from books)";
-            $sql="select * from books where id>0 and id<6";
+            $sql="select top ".($pageNow-1)*$pageSize." id from books where id not in (select top $pageSize id from books)";
+            //$sql="select * from books where id>0 and id<6";
             $sqlHelper=new DB();
             //这里的$res就是二维数组
             $res=$sqlHelper->execute_dql2($sql);
@@ -63,8 +63,8 @@
             function findId($Cname)
             {
                 
-               // $sql="select id from consumer where Cname='$Cname'";
-                $sql="select id from consumer where Cname='chonggong'";
+               $sql="select id from consumer where Cname='$Cname'";
+                //$sql="select id from consumer where Cname='chonggong'";
                 //创建$sqlHelper对象实例
                 $sqlHelper=new DB();
                $res= $sqlHelper->execute_dql2($sql);

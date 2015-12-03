@@ -45,13 +45,13 @@
    
    // $bid=$check->getBid();
     echo "<table border='1px' bordercolor='green' cellspacing='0px' width='600px'>";
-    echo "<tr><th>bname</th><th>time</th></tr>";
+    echo "<tr><th>bname</th><th>time</th><th>还书</th></tr>";
     $arr2=array();
       for($i=0;$i<count($arr);$i++)
     {
        $arr2=$checkserver->getbookname($arr[$i]);
     
-        echo "<tr><td>{$arr2[0]}</td><td>{$arr3[$i]->format('jS, F Y')}</td></tr>"; 
+        echo "<tr><td>{$arr2[0]}</td><td>{$arr3[$i]->format('jS, F Y')}</td><td >还书</td></tr>"; 
     }
     echo "</table>";
     ?>
