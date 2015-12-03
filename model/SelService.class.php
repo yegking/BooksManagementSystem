@@ -59,16 +59,17 @@
                 $sqlHelper->close_connect();
             }
             
-            //根据输入的id栓删除某个用户
-            function delEmpById($id)
+            //根据输入的name找出id
+            function findId($Cname)
             {
                 
-                //
-                $sql="delete from emp where id=$id";
+               // $sql="select id from consumer where Cname='$Cname'";
+                $sql="select id from consumer where Cname='chonggong'";
                 //创建$sqlHelper对象实例
                 $sqlHelper=new DB();
-                //012
-                return $sqlHelper->execute_dml($sql);
+               $res= $sqlHelper->execute_dql2($sql);
+               $sqlHelper->close_connect();
+                return $res;
                 
             }
             //跟新所剩余的图书
@@ -77,6 +78,16 @@
                 //做一个sql语句
                 $sql="update books set Ball='$Ball',Bout='$Bout' where id='$id'";
               
+                //同sqlHelper完成添加
+                $sqlHelper=new DB();
+                $res=$sqlHelper->execute_dml($sql);
+                $sqlHelper->close_connect();
+                return $res;
+            }
+            function upOutBooks($Cid,$id)
+            {
+                //做一个sql语句
+                $sql="insert into out values ($Cid,$id,default)";
                 //同sqlHelper完成添加
                 $sqlHelper=new DB();
                 $res=$sqlHelper->execute_dml($sql);

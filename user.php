@@ -40,7 +40,7 @@
    getListTime();
 
 echo "<h1 style=".'margin-left:150px'.">主界面</h1>";
-echo  "<a href='empList.php'>管理图书</a><br/>";
+echo  "<a href='checkBooks.php'>管理图书</a><br/>";
 echo "<a href='#'>退出系统</a><br/>";
 echo "<hr/>";
 
@@ -57,9 +57,11 @@ echo "<table border='1px' bordercolor='green' cellspacing='0px' width='600px'>";
     {
         $row=$fenyePage->res_array[$i];
        
-        echo "<tr><td>{$row['id']}</td><td>{$row['Bname']}</td><td>{$row['Ball']}</td><td>{$row['Bout']}</td><td>{$row['Bpress']}</td><td>{$row['Bauthor']}</td>
-        <th><a onclick='return confirmDele({$row['id']})' href='UserProcess.php?flag=del&id={$row['id']}&Ball={$row['Ball']}&Bout={$row['Bout']}'>借书</a></th></tr>"; 
+        echo "<tr><td>{$row['id']}</td><td>{$row['Bname']}</td><td>{$row['Ball']}</td><td>{$row['Bout']}</td><td>{$row['Bpress']}</td><td>{$row['Bauthor']}</td>".
+        "<td><a href='UserProcess.php?flag=del&id={$row['id']}&Ball={$row['Ball']}&Bout={$row['Bout']}&Bname={$row['Bname']}'>借书</a></td></tr>";
+        //onclick='return confirmDele({$row['id']})'
     }
+   
    
     echo "</table>";
     

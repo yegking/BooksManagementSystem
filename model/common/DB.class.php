@@ -40,16 +40,20 @@ public function execute_dql2($sql)
     $arr=array();
     $res=sqlsrv_query($this->conn, $sql);
     //把$res=>$arr的结果集转移到一个数组中
-    while($row = sqlsrv_fetch_array($res))
+    while($row=sqlsrv_fetch_array($res))
     {
        
         $arr[]=$row;
     }
+   //$row=sqlsrv_fetch_array($res);
     //这里就可以马上把$res关闭
-   // $res->free();
+   // sqlsrv_free_stmt($res);
+   
  return $arr;
    
 }
+
+
 
 
 //执行dml语句

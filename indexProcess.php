@@ -42,7 +42,7 @@ if($name!=""){
     //非法用户，
     
     header("Location: index.php?errno=1");
-   exit();
+  exit();
     
     
 }
