@@ -42,7 +42,9 @@ public function execute_dql2($sql)
     //把$res=>$arr的结果集转移到一个数组中
     while($row=sqlsrv_fetch_array($res))
     {
-       
+       //sqlsrv_get_field( $res, 0, SQLSRV_PHPTYPE_STRING( SQLSRV_ENC_CHAR));
+      
+        
         $arr[]=$row;
     }
    //$row=sqlsrv_fetch_array($res);

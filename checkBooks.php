@@ -34,6 +34,7 @@
       
        $arr[]=$check[$i]['bid'];
        $arr3[]=$check[$i]['newDate'];
+      
        //var_dump($arr3[$i]);
        //echo $arr3[$i]->format('jS, F Y');
     }
@@ -50,8 +51,16 @@
       for($i=0;$i<count($arr);$i++)
     {
        $arr2=$checkserver->getbookname($arr[$i]);
+       $t="";
+       for($j=0;$j<23;$j++){
+           $t.=$arr3[$i]->format('Y-m-d H:i:s:u')[$j];
+          
+       }
     
-        echo "<tr><td>{$arr2[0]}</td><td>{$arr3[$i]->format('jS, F Y')}</td><td >还书</td></tr>"; 
+        echo "<tr><td>{$arr2[0]}</td><td>{$arr3[$i]->format('jS, F Y')}</td><td><a onclick='return confirmDele({$arr3[$i]->format('jS, F Y')})' href='checkProcess.php?flag=del&id={$t}&book={$arr2[0]}'>还书</td></tr>";
+        //var_dump("CONVERT(char,$arr3[$i],yyyy-mm-dd hh:mi:ss.mmm)") ;
+       //echo Date("Y-m-d H:i:s",$arr3[$i]);format('jS, F Y')    $arr3[$i]->format('Y-m-d H:i:s:u')
+        
     }
     echo "</table>";
     ?>

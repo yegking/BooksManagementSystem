@@ -9,20 +9,10 @@
             $sqlHelper=new DB();
             $arr=$sqlHelper->execute_dql2($sql);//妈的现在为空
           // var_dump($arr);
-            $sqlHelper->close_connect();
-            /*
-            $fenyepage=new FenyPage();
            
-             $fenyePage->res_array=$arr;
-        
-         */
-            /*$check=new Check();
-            for($i=0;$i<count($arr);$i++){
-            $check->setCid($arr[$i]['cid']);
-            $check->setBid($arr[$i]['bid']);
             
-            $check->setNewDate($arr[$i]['newDate']);
-            }*/
+            $sqlHelper->close_connect();
+          
            return $arr;
             
         }
@@ -57,6 +47,18 @@
             return $pageCount;
         }
         //第二种使用封装的方法完成分页
+        function delOutByTime($time)
+        {
+            $sql="delete from out where newDate='$time'";
+            $sqlHelper=new DB();
+            return $sqlHelper->execute_dml($sql);
+        }
+        function addBooks($book){
+            $sql="update books set Ball=Ball+1,Bout=Bout-1 where Bname='$book'";
+            $sqlHelper=new DB();
+            return $sqlHelper->execute_dml($sql);
+            
+        }
         
         
         
