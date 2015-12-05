@@ -46,7 +46,7 @@
             $sqlHelper->close_connect();
             return $pageCount;
         }
-        //第二种使用封装的方法完成分页
+        
         function delOutByTime($time)
         {
             $sql="delete from out where newDate='$time'";
