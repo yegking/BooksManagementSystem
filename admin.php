@@ -7,7 +7,7 @@
 <?php 
   
    require_once 'common.php';
-  // CheckUserVaildate();
+   CheckUserVaildate();
    echo "欢迎".$_GET['name']."登陆成功";
    echo "<br/><a href='index.php'>返回重新登录</a>";
     
@@ -18,6 +18,7 @@
 <a href='admin/userList.php'>管理用户</a><br/>
 <a href='admin/adduser.php'>添加用户</a><br/>
 <a href='admin/booksList.php'>管理图书</a><br/>
+<a href='admin/outList.php'>外借图书</a><br/>
 
 <hr/>
 

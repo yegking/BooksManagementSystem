@@ -28,7 +28,8 @@ Class DB{
       
        //执行dql语句
        public function execute_dql($sql){
-           $res = sqlsrv_query($this->conn, $sql) ;
+           $res = sqlsrv_query($this->conn, $sql);
+          // $res=sqlsrv_fetch_array($res);
            return $res;
         
        }

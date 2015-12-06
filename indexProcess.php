@@ -28,17 +28,19 @@ if(empty($_POST['keep'])){
 }
 
 
+
+
 $adminService=new AdminService();
 $name=$adminService->checkAdmin($id, $pwd);
 
 if($name!=""){
+    
     session_start();
     $_SESSION['loginuser']=$name;
     if(substr($name,0,7)=='mayanwu'){
         header("Location: admin.php?name=$name");
         exit();
     }else{
-       
     header("Location: user.php?name=$name");
     exit();
     }

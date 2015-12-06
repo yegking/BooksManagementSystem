@@ -1,6 +1,7 @@
 <?php
 require_once 'adminService.class.php';
-
+require_once 'common.php';
+CheckUserVaildate();
 
 $adService=new adminService();
 $arr=array();

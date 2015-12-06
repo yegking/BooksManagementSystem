@@ -41,7 +41,7 @@
 
 echo "<h1 style=".'margin-left:150px'.">主界面</h1>";
 echo  "<a href='checkBooks.php'>管理图书</a><br/>";
-echo "<a href='#'>退出系统</a><br/>";
+
 echo "<hr/>";
 
 

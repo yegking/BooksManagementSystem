@@ -58,6 +58,45 @@
             
             return $res;
         }
+        function getOutList(){
+            $sql="select * from out";
+            $sqlHelper=new DB();
+            $arr=$sqlHelper->execute_dql2($sql);
+            $sqlHelper->close_connect();
+            return $arr;
+        }
+        
+        function getUserNameById($id){
+            
+            $sql="select Cname from consumer where id=$id";
+            $sqlHelper=new DB();
+            $res=$sqlHelper->execute_dql($sql);
+            if($row=sqlsrv_fetch_array($res))
+            {
+                return $row;
+            }
+            
+            $sqlHelper->close_connect();
+            
+          
+            
+            
+        }
+        
+        function getBooksById($id){
+            
+            $sql="select Bname from books where id=$id";
+            $sqlHelper=new DB();
+            $res=$sqlHelper->execute_dql($sql);
+            if($row=sqlsrv_fetch_array($res))
+            {
+                return $row;
+            }
+            
+            $sqlHelper->close_connect();
+            
+           
+        }
         
       
     }
