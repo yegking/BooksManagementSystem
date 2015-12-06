@@ -30,7 +30,7 @@
            $Cid=$sel->findId($Cname);
            $Cid= $Cid[0]['id'];
            $res3=$sel->upOutBooks($Cid,$id);
-          echo $res3;
+          //echo $res3;
             if($res==1)
             {
                 

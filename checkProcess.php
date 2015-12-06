@@ -19,13 +19,13 @@ if(!empty($_REQUEST['flag']))
         if($checkService->delOutByTime($id)==1 && $checkService->addBooks($book)==1)
         {
             //成功
-          //  header("Location: ok.php");
+          header("Location: admin/ok.php");
             exit();
         }
         else
         {
             //失败
-            header("Location: error.php");
+            header("Location: admin/error.php");
             exit();
         }
     }

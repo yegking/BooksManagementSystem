@@ -2,14 +2,14 @@
 <head>
 <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 <title>
-查看已借图书
+已借图书
 </title>
 <link href="css/user.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <div class="div1">
-<div class="divm">
-<hr/>
+<div class="divm" style="background:url(images/2.jpeg);background-repeat:no-repeat;background-size:height:600px">
+
 <?php 
     require_once 'CheckServer.class.php';
     require_once 'model/SelService.class.php';
@@ -45,8 +45,8 @@
     
    
    // $bid=$check->getBid();
-    echo "<table border='1px' bordercolor='green' cellspacing='0px' width='600px'>";
-    echo "<tr><th>bname</th><th>time</th><th>还书</th></tr>";
+    echo "<table border='1px' bordercolor='#c0c0c0' cellspacing='0px' width='600px' style='padding:100px;'>";
+    echo "<tr><th>书名</th><th>借书时间</th><th>还书</th></tr>";
     $arr2=array();
       for($i=0;$i<count($arr);$i++)
     {

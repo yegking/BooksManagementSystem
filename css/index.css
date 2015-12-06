@@ -5,15 +5,18 @@
 	
 	height:500px;
 	margin-top:70px;
-	border:0px solid yellow;
-	background-color:#f3aa58;
+	/*border:0px solid yellow;
+	background-color:#f3aa58;*/
 }
 .divm{
 	width:600px;
 	margin-left:350;
 	height:500px;
-	background-color:#c0c0c0;
+	/*background-color:#c0c0c0;*/
 	margin:auto;
+	/*background-image:url(../images/1.jpg);*/
+	
+	
 	
 }
 .span1{
@@ -25,6 +28,5 @@
 }
 .table1{
 	margin:auto;
-	
 	margin-top:100px;
 }

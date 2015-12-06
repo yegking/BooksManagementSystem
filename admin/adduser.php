@@ -1,12 +1,22 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>
+用户列表
+</title>
+<link href="../css/user.css" rel="stylesheet" type="text/css"/>
+<link href="../css/admin.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<div class="div1">
+<div class="divm" style="background:url(../images/5.jpg);background-repeat:no-repeat;background-size:contain;background-size:height:300px">
+
+
 <?php 
-require_once 'common.php';
+require_once '../common.php';
 CheckUserVaildate();
 
 ?>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-</head>
 
 <hr/>
 <h1>添加雇员</h1>
@@ -24,4 +34,6 @@ CheckUserVaildate();
 </tr>
 </table>
 </form>
+</div>
+</div>
 </html>

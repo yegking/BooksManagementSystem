@@ -8,7 +8,7 @@
 </head>
 
 <div class="div1">
-<div class="divm">
+<div class="divm" style="background:url(images/2.jpeg);background-repeat:no-repeat;background-size:height:600px">
 <hr/>
 <?php 
    require_once 'model/SelService.class.php';
@@ -47,7 +47,7 @@ echo "<hr/>";
 
 
 
-echo "<table border='1px' bordercolor='green' cellspacing='0px' width='600px'>";
+echo "<table border='1px' bordercolor='#c0c0c0' cellspacing='0px' width='600px'>";
     echo "<tr><th>id</th><th>Bname</th><th>Ball</th><th>Bout</th><th>Bpress</th><th>Bauthor</th><th>lend</th></tr>";
     //echo count($fenyePage->res_array);
     

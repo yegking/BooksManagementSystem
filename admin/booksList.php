@@ -20,7 +20,7 @@ require_once 'adminService.class.php';
 $adService=new adminService();
 $arr=array();
 $arr=$adService->getbooksList();
-echo "<table border='1px' bordercolor='green' cellspacing='0px' width='600px'>";
+echo "<table border='1px' bordercolor='#c0c0c0' cellspacing='0px' width='600px'>";
 echo "<tr><th>书名</th><th>馆存</th><th>借出</th><th>简介</th><th>作者</th></tr>";
 
 
