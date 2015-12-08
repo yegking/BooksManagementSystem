@@ -34,7 +34,7 @@
         }
         else if($flag=="adduser")
         {
-            //说明用户希望执行添加雇员
+            //说明用户希望执行添加
             //接收数据
             $name=$_POST['Cname'];
             $pwd=$_POST['Cpwd'];

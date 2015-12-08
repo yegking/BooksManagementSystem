@@ -1,10 +1,10 @@
 <?php
 require_once 'CheckServer.class.php';
 //接收用户要删除的用户id
-//创建了EmpService对象实例
+
 $checkService=new CheckServer();
 
-//先看看用户要分页还是删除某个雇员
+//先看看用户要分页还是删除某个
 if(!empty($_REQUEST['flag']))
 {
     //接收flag值

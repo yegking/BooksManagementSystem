@@ -70,7 +70,7 @@ public function execute_dml($sql)
     }
     else
     {
-        if(sqlsrv_rows_affected($b)>=0)          //mysql_affected_rows() 函数返回前一次 MySQL 操作所影响的记录行数。
+        if(sqlsrv_rows_affected($b)>=0)        
         {
             return 1;
         }

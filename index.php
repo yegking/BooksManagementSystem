@@ -12,12 +12,12 @@ require_once 'common.php';
 </head>
 
 <div class="div1">
-<div class="divm" style="background:url(images/1.jpg);background-repeat:no-repeat;background-size:contain;">
+<div class="divm" style="background:url(images/6.jpg);background-repeat:no-repeat;background-size:contain;">
 <!--  <span class="span1">图书管理系统</span>-->
-
+<span style="color: lightgreen;font-size: 50px;  padding-left: 200px;">爱阅读</span>
 <form action="indexProcess.php" method="post">
 
-<table class="table1" style="padding:160px;">
+<table class="table1" style="padding:5px;  padding-left:340px;">
 <tr ><td>账号:</td><td><input type="text" name="id" value="<?php echo getCookieVal("id");?>"/></td></tr>
 <tr><td>密码:</td><td><input type="password" name="password"/></td></tr>
 <tr><td>验证码:</td><td><input type="text" name="checkcode"/><img src="checkcode.php" onclick="this.src='checkCode.php?aa='+Math.random()"></td></tr>
