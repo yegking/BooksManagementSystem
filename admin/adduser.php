@@ -19,7 +19,7 @@ CheckUserVaildate();
 ?>
 
 <hr/>
-<h1>添加雇员</h1>
+<h1>添加用户</h1>
 <form action="adminProcess.php" method="post">
 <table>
 <tr><td>名字</td><td><input type="text" name="Cname"/></td></tr>

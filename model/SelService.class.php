@@ -7,7 +7,7 @@
         //一个函数可以获取多少页
         function getPageCount($pageSize)
         {
-            //需要查询$rowCount
+            
             $sql="select count(id) from books";
             $sqlHelper=new DB();
             $res=$sqlHelper->execute_dql($sql);
@@ -24,7 +24,7 @@
         }
         
         
-        //一个函数可以获取应当显示的雇员信息
+        //一个函数可以获取应当显示信息
         function getEmpListByPage($pageNow,$pageSize)
         {
             //$sql="select * from emp limit ".($pageNow-1)*$pageSize.",$pageSize";
